@@ -1,0 +1,5 @@
+# segredos e saidas locais
+.env
+encerra_mdfe_log.jsonl
+local-ai/runs/
+*.tmp
