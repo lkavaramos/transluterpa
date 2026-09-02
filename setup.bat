@@ -5,7 +5,7 @@ echo.
 
 set "RAW=https://raw.githubusercontent.com/lkavaramos/transluterpa/main/setup.ps1"
 
-powershell -ExecutionPolicy Bypass -NoProfile -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iwr -useb '%RAW%' | iex"
+powershell -ExecutionPolicy Bypass -NoProfile -Command "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; iex (irm '%RAW%')"
 
 echo.
 pause
